@@ -16,14 +16,14 @@ app.use(cors({ origin: "https://strong-kelpie-cd86b8.netlify.app" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/api/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
-app.use("/api/auth", authRoutes);
-app.use("/api/projects", projectRoutes);
-app.use("/api/projects/:projectId/tasks", taskRoutes);
-app.use("/api/tasks", taskRoutes);
+app.use("/auth", authRoutes);
+app.use("/projects", projectRoutes);
+app.use("/projects/:projectId/tasks", taskRoutes);
+app.use("/tasks", taskRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ success: false, message: "Route not found." });
