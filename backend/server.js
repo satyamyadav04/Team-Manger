@@ -12,7 +12,8 @@ const app = express();
 
 connectDB();
 
-app.use(cors({ origin: "https://strong-kelpie-cd86b8.netlify.app" }));
+app.use(cors({ origin: "http://localhost:5173" }));
+// app.use(cors({ origin: "https://strong-kelpie-cd86b8.netlify.app" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
