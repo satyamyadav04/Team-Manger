@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://team-task-manager-y916.onrender.com';
 
 const request = async (path, options = {}) => {
   const token = localStorage.getItem('token');
