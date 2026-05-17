@@ -7,6 +7,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import AppLayout from './component/AppLayout';
+import './component/ThemeToggle.css';
 import { AuthProvider, useAuth } from './context/authContext';
 import AuthPage from './auth/Authpage';
 import Dashboard from './page/Dashboard';

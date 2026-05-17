@@ -1,0 +1,19 @@
+.theme-toggle-btn {
+  gap: 10px;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: color-mix(in srgb, var(--bg-2) 88%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--bg-3);
+}
+
+.theme-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+}

@@ -8,4 +8,19 @@
   min-width: 0;
   background: var(--bg);
   overflow-y: auto;
+  position: relative;
+}
+
+.theme-toggle-wrap {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 20px 0;
+  pointer-events: none;
+}
+
+.theme-toggle-wrap .theme-toggle-btn {
+  pointer-events: auto;
 }

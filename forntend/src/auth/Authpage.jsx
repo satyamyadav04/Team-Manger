@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/authContext';
+import ThemeToggle from '../component/ThemeToggle';
 import './Auth.css';
 
 export default function AuthPage({ mode = 'login' }) {
@@ -40,6 +41,10 @@ export default function AuthPage({ mode = 'login' }) {
         <div className="auth-orb auth-orb-1" />
         <div className="auth-orb auth-orb-2" />
         <div className="auth-grid" />
+      </div>
+
+      <div className="auth-theme-toggle">
+        <ThemeToggle />
       </div>
 
       <div className="auth-container">
