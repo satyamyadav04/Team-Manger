@@ -18,9 +18,9 @@ export default function TaskModal({ task, projectId, members, onClose, onSave })
   const handleChange = (event) => {
     setForm((current) => ({ ...current, [event.target.name]: event.target.value }));
   };
-
+                                                 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault();         
     setError('');
     setSaving(true);
 

@@ -8,11 +8,11 @@ The frontend is a React + Vite app, and the backend is an Express API connected 
 
 This project covers the usual team workflow from account creation to project delivery:
 
-1. A user signs up or logs in.
-2. After authentication, they land on a dashboard with project and task stats.
+1. A user signs up or logs in.   
+2. After authentication, they land on a dashboard with project and task stats.   
 3. They can create projects with a name, description, color, status, and due date.
-4. Each project can have team members added by email.
-5. Inside a project, tasks can be created, assigned, updated, moved across statuses, and deleted.
+4. Each project can have team members added by email.    
+5. Inside a project, tasks can be created, assigned, updated, moved across statuses, and deleted.      
 6. Each user also gets a personal "My Tasks" view to track their assigned work in one place.
 
 ## Main features
@@ -25,11 +25,11 @@ This project covers the usual team workflow from account creation to project del
 - Dashboard summary with recent tasks and status counts
 - Kanban and list views for project tasks
 - Personal task page with filters, search, and overdue highlights
-
+ 
 
 ## Project Demo 
 
-<video controls src="Recording 2026-04-30 202727.mp4" title="Title"></video>
+<video controls src="Screen Recording 2026-05-18 073848.mp4" title="Title"></video>
 ---
 
 ## Tech stack
@@ -117,14 +117,14 @@ Inside a project, admins can invite members using their email address. The owner
 
 Tasks belong to a project and can include:
 
-- title
+- title                                     
 - description
 - assignee
 - status
 - priority
 - due date
-- tags
-- comments
+- tags                
+- comments                   
 
 Tasks can be updated in board view or list view. Depending on the user's role, they may be allowed to edit everything or only update task status.
 
